@@ -214,7 +214,12 @@ Click the button below to open the app:`
           inline_keyboard: [[
             {
               text: "🚀 Open BearApp",
-              web_app: { url: "https://telegram-mini-app-wi-qg9a.bolt.host" }
+              web_app: { url: "https://<your-app>.vercel.app" }
+
+// opsi pakai ENV (lebih rapi):
+const APP_URL = Deno.env.get('APP_URL') || 'https://<your-app>.vercel.app';
+// ...
+web_app: { url: APP_URL }
             }
           ]]
         }
