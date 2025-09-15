@@ -1,6 +1,6 @@
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 
-const ALLOWED_ORIGINS = (Deno.env.get('ALLOWED_ORIGINS') || 'https://t.me,https://web.telegram.org,https://telegram-mini-app-wi-qg9a.bolt.host')
+const ALLOWED_ORIGINS = (Deno.env.get('ALLOWED_ORIGINS') || 'https://web.telegram.org,https://<your-app>.vercel.app')
   .split(',')
   .map(s => s.trim());
 
